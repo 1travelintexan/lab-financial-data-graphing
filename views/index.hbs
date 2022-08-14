@@ -1,9 +1,26 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-<h2>From:</h2>
-<input type="date" id="from" />
-<h2>To:</h2>
-<input type="date" id="to" />
-<button id="search">Search Data</button>
+<div id="title">
+  <h1>{{title}}</h1>
+</div>
+<div id="dates-container">
+  <div>
+    <h2>From:</h2>
+    <input type="date" id="from" />
+    <h2>To:</h2>
+    <input type="date" id="to" />
+    <button id="search">Search Data</button>
+  </div>
+  <div>
+    <h4>Choose a currency:
+    </h4>
+    <select id="currency">
+      <option value="USD">U.S. Dollar</option>
+      <option value="EUR">Euro</option>
+    </select>
+  </div>
+</div>
+<div id="min-max">
+  <h4>Lowest Value: <span id="min"></span></h4>
+  <h4>Highest Value: <span id="max"></span></h4>
+</div>
 
 <canvas id="myChart" width="400" height="400"></canvas>

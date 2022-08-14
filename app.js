@@ -16,7 +16,7 @@ const app = express();
 require("./config")(app);
 
 // default value for title local
-const projectName = "lab-financial-data-graphing";
+const projectName = "Bitcoin Tracking App";
 const capitalized = (string) =>
   string[0].toUpperCase() + string.slice(1).toLowerCase();
 
